@@ -6,6 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Install Nodejs
         uses: actions/setup-node@v1
         with:
@@ -13,14 +14,6 @@ jobs:
       - name: check pwd
         run: |
           pwd
-      - name: Open Web Client Directory
-        run: |
-          ls -la
-          cd ./src/webclient
-          ls -la
-      - name: anu
-        run: |
-          ls
       - name: Running whatsapp
         run: |
           node ./index.js
