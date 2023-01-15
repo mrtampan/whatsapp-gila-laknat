@@ -1,7 +1,6 @@
 name: serve
 on:
   workflow_dispatch:
-defaults:
 
 jobs:
   build:
