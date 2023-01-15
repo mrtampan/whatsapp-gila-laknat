@@ -13,9 +13,11 @@ jobs:
       - name: check pwd
         run: |
           pwd
-      - name: check index
+      - name: Open Web Client Directory
         run: |
-          cat ./index.js
+          ls -la
+          cd ./src/webclient
+          ls -la
       - name: anu
         run: |
           ls
