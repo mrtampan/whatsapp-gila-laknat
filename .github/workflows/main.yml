@@ -16,7 +16,7 @@ jobs:
           pwd
       - name: check index
         run: |
-          cat index.js
+          cat ./index.js
       - name: anu
         run: |
           ls
