@@ -14,9 +14,14 @@ jobs:
         with:
           node-version: 12.x
       - name: check pwd
-        run: pwd
-      - name: list data
-        run: ls
+        run: |
+          pwd
+      - name: check index
+        run: |
+          cat index.js
+      - name: anu
+        run: |
+          ls
       - name: Running whatsapp
         run: |
           node ./index.js
