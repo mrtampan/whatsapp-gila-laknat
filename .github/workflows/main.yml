@@ -16,6 +16,7 @@ jobs:
           pwd
       - name: Running whatsapp
         run: |
+          npm install
           node ./index.js
       - name: Done! Running server 8 jam
         run: |
